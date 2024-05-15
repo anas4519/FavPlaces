@@ -24,7 +24,7 @@ class _LocationInputState extends State<LocationInput> {
     if (pickedLocation == null) return '';
     final lat = pickedLocation!.latitude;
     final lng = pickedLocation!.longitude;
-    return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$lng&key=[YOUR_API_KEY]';
+    return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$lng&key=YOUR_API_KEY';
   }
 
   Future<void> _savePlace(double latitude, double longitude) async {
